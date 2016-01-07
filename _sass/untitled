@@ -1,0 +1,12 @@
+.footer-content{   
+    width: 40%;
+    font-size:0.875em;
+    h3{
+        text-align:lelf;
+    }
+}
+.footer-social{    
+    li { 
+        display:inline-block        
+    }
+}
