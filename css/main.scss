@@ -37,7 +37,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 $content-width:    1200px;
 
 $on-palm:    w      600px;
-$on-laptop:        1200px;
+$on-laptop:        800px;
 
 
 
@@ -61,5 +61,6 @@ $on-laptop:        1200px;
         "base",
         "layout",
         "syntax-highlighting",
-        "gradient-bar"
+        "gradient-bar",
+        "post"
 ;

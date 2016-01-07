@@ -4,24 +4,31 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
 
+<!--      -->
+<section class="site-section site-section-last">
+  <div class="wrapper">
+  <h1>latest articles</h1>
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-                <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+  {% for post in site.posts reversed | limit:4 %}
+      <li class="post">
+          <h2>{{post.title}}</h2>  
+          <p>{{post.content | strip_html |strip_newline |truncate:200}}</p>
+          <p class="post-read-more-link">
+            <a href="#">read more</a>
+          </p>
       </li>
     {% endfor %}
-  </ul>
-  [Adding Bootstrap to Jekyll](http://stackoverflow.com/questions/28733425/adding-bootstrap-to-jekyll)
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </ul>    
+  </div>
+
+</section>
+
+
+
+<!--     -->
+<!--     -->
 
 </div>
