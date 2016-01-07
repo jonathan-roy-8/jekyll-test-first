@@ -1,21 +1,30 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
 sass_dir: bower_components/bootstrap-sass/assets/stylesheets
 # Site settings
-title: My awesome website
+title: My awesome Portfolio
 email: jo_92jo@hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Write an awesome description for your new site here.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "www.google.com" # the base hostname & protocol for your site
 twitter_username: jolejo
 github_username:  jolejo
+google_username: jolejo
+
+permalink: /:categories/:title
+
+links:
+    - title: About
+      url: /about
+    - title: Work
+      url: /work
+    - title: Articles
+      url: /article
+    - title: Hire me
+      url: /hire-me
+
+
 
 # Build settings
 markdown: kramdown
