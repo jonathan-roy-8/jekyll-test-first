@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "Install Eclipse on Ubuntu"
+date:   2016-01-14
+categories: jekyll update
+featured: true
+---
+
+## Hunc sedes
+
+1. Install Java.
+
+If you don’t have Java installed on your system. Click the link below to bring up Ubuntu Software Center and click install OpenJDK Java 7:
+sudo apt-get install openjdk-7-jdk
+
+2. Download Eclipse from its website
+
+You may check out your OS Type 32-bit or 64-bit by going to System Settings -> Details -> Overvie
+
+
+3. Extract Eclipse to /opt/ for global use
+
+Press Ctrl+Alt+T on keyboard to open the terminal. When it opens, run the command below to extract Eclipse to /opt/:
+
+cd /opt/ && sudo tar -zxvf ~/Downloads/eclipse-*.tar.gz
+
+
+4. Create a launcher shortcut for Eclipse
+
+Press Ctrl+Alt+T, paste below command into the terminal and hit enter (install gksu from Software Center if below command does not work).
+
+gksudo gedit /usr/share/applications/eclipse.desktop
+
+Above command will create and open the launcher file for eclipse with gedit text editor.
+
+Paste below content into the opened file and save it.
+
+[Desktop Entry]
+Name=Eclipse 4
+Type=Application
+Exec=/opt/eclipse/eclipse
+Terminal=false
+Icon=/opt/eclipse/icon.xpm
+Comment=Integrated Development Environment
+NoDisplay=false
+Categories=Development;IDE;
+Name[en]=Eclipse
+
+
+
+
+Finally open Eclipse from Unity Dash search results and enjoy!
+
+http://ubuntuhandbook.org/index.php/2014/06/install-latest-eclipse-ubuntu-14-04/

@@ -5,30 +5,34 @@ layout: default
 <div class="home">
 
 
-<!--      -->
-<section class="site-section site-section-last">
-  <div class="wrapper">
-  <h1>latest articles</h1>
-  <ul class="post-list">
+  <!--   Feature articles    -->
+  <section class="site-section site-section-last">
+    <div class="wrapper">
+      <h1>Feature articles</h1>
+      {% assign count=0%}
+      {% for post in site.posts reversed  %}
+      {% if post.featured == true and count < 1 %}
+      <div class="post post-featured">
+      {% include post.html %}
+      </div>
+      {% assign count = count | plus: 1 %}
+      {% endif%}
+      {% endfor %}
 
-  {% for post in site.posts reversed | limit:4 %}
-      <li class="post">
-          <h2>{{post.title}}</h2>  
-          <p>{{post.content | strip_html |strip_newline |truncate:200}}</p>
-          <p class="post-read-more-link">
-            <a href="#">read more</a>
-          </p>
-      </li>
-    {% endfor %}
-
-  </ul>    
-  </div>
-
-</section>
-
-
-
-<!--     -->
-<!--     -->
-
+    </div>
+  </section>
+  <!--  Latest articles    -->
+  <section class="site-section site-section-last">
+    <div class="wrapper">
+      <h1>latest articles</h1>
+      <ul class="post-list">
+        {% for post in site.posts reversed | limit:4 %}
+        <li class="post">
+          {% include post.html %}
+        </li>
+        {% endfor %}
+      </ul>    
+    </div>
+  </section>
+  <!--     -->
 </div>
