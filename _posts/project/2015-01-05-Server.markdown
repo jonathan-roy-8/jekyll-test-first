@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "greton"
-date:   2016-09-15 20:16:59 -0500
-categories: jekyll update
+title:  "Server"
+date:   2015-01-05 20:16:59 -0500
+categories: project
+featured: true
+featured_image: "http://fakeimg.pl/300x100/"
 ---
 
 ## Hunc sedes
@@ -57,4 +59,4 @@ Et profecto, qua diu in ferox ad coeptus frustra excutit spumam salutat manet
 [succiso piumque deum](http://tumblr.com/)! Stetit et bene esse quem sine alti
 caput innuba et, pete patrem **erat**. Et huius numina, ipsa esse *ponentem*.
 Rector Thesea, in studeat inclinavit citus, oppositumque leonis mitis, clavigeri
-**natus** clara quam.
+**natus** clara quam.  

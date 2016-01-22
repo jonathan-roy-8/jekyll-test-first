@@ -2,7 +2,7 @@
 layout: post
 title:  "fish!"
 date:   2016-01-01 20:16:59 -0500
-categories: jekyll update
+categories: blog
 ---
 
 ## Hunc sedes

@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Cisco"
+date:   2015-01-06 20:16:59 -0500
+categories: project
+featured: true
+featured_image: "http://fakeimg.pl/300x100/"
+---
+
+## Hunc sedes
+Whilst it's fairly simple to find names, addresses, dates of birth and social security numbers by inspecting your column names, it's important to remember that personally identifiable information can also be lurking in your "free text entry" fields, often used to store "comments" or "remarks" from the user.
+
+The attached script creates a scalar function* to generate an arbirtary amount (up to 16104 characters) of "Lorem Ipsum" text. Lorem Ipsum is the "filler" text commonly used by graphic designers as a placeholder for text elements on a page. 

@@ -2,9 +2,50 @@
 layout: post
 title:  "Git"
 date:   2016-01-14 
-categories: jekyll update
+categories: blog
 featured: true
 ---
 
 ## Hunc sedes
- 
+Setup git
+git config --global user.name "Jonathan Roy"
+git config --global user.email "gfdag@gfadg.com"
+git config --global color.ui true
+
+
+
+git status  -> what has changed since the last commit et dit la nom de la branch
+git add firstfile.txt   -> ajoute au staging area, file d'attente
+git commit -m "description du changement"   take a snapshot of the files
+git add --all    -> adds all new  or modified files or delete file to the staged
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:jonathan-roy-8/git-test.git
+
+git remote -v    ->  show remote repositories
+git push -u origin master
+
+git clone https://github.com/jonathan-roy-8/git-test.git   -> create a local repository 
+git clone https://github.com/jonathan-roy-8/git-test.git toto   -> create a local repository et change le nom du project pour toto
+git branch cat    -> create a branch cat but doen't move the branch we are pointing 
+git checkout cat   -> switch to the cat branch(timeline)
+
+quand on veux incorporer les changements d'une branch
+git checkout master 
+git merge cat  -> merge bring one branch change into another
+fast-forward = nothing was modified on the master
+quand on merge plusieurs modification, vi va ourvrir et pour sortir ":wq" enter write save
+
+git checkout -b admin   create branch and checkout branch
+
+
+git log     ->  look at the history previus commit
+
+git diff     ->  check difference between last commit  green new    red delete
+
+git reset HEAD filename   -> enleve un fichier du staged list
+
+git checkout --filename  -> blow away all changes since the last commit
+
+git reset --soft HEAD^    -> move the commit before the current comit
+
